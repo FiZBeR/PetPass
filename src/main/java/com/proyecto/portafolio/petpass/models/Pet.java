@@ -47,6 +47,6 @@ public class Pet {
     @JoinColumn(name = "user_id", nullable = false)
     private User owner;
 
-    @OneToMany(mappedBy = "pet")
+    @OneToMany(mappedBy = "mascota")
     private List<VaccinationRecord> registro_vac = new ArrayList<>();
 }
